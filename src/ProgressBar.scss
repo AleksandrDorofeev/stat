@@ -1,0 +1,95 @@
+.progress-bar {
+  &__position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__container-percentage {
+    display: flex;
+    justify-content: center;
+    // position: relative;
+    // justify-content: flex-end;
+    // width: 388px;
+    margin-left: 170px;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #464646;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-right: -20px;
+    &__container {
+      width: 388px;
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+    }
+    &__slide {
+      position: absolute;
+      top: 0;
+    }
+  }
+  position: relative;
+  height: 30px;
+  width: 950px;
+  margin-left: 15px;
+  border: 1px solid #bababa;
+  border-left: 0;
+  border-right: 0;
+  &__cutoff-start {
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    left: 182.5px;
+    top: -6px;
+    background: #bababa;
+  }
+  &__cutoff-left-center {
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    left: 91.25px;
+    top: -6px;
+    background: #bababa;
+  }
+  &__cutoff-center {
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    left: 0;
+    top: -6px;
+    background: #bababa;
+  }
+  &__cutoff-right-center {
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    right: 91.25px;
+    top: -6px;
+    background: #bababa;
+  }
+  &__cutoff-end {
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    right: 0;
+    top: -6px;
+    background: #bababa;
+  }
+}
+
+.filler {
+  background: linear-gradient(
+    90deg,
+    rgba(110, 167, 216, 1) 30%,
+    rgba(40, 111, 163, 1) 70%
+  );
+  height: 100%;
+  //   border-radius: inherit;
+  transition: width 0.2s ease-in;
+}
