@@ -12,21 +12,17 @@ class ProgressBar extends Component {
     // Math.floor(this.props.regions.length * 1.17647059);
     return (
       <div className="progress-bar__position">
-        <div className="progress-bar__container-percentage">
+        <div className="progress-bar__container-date__container">
           <div
-            className="progress-bar__container-percentage__container"
-            style={{ height: "25px" }}
+            className="progress-bar__container-date__item"
+            // style={{
+            //   left: `${lenght -
+            //     (lenght > Math.floor(49) ? 5 * 1.17647059 : 3 / 1.17647059)}%`
+            // }}
           >
-            <span
-              className="progress-bar__container-percentage__slide"
-              style={{
-                left: `${lenght -
-                  (lenght > Math.floor(49) ? 5 * 1.17647059 : 3 / 1.17647059)}%`
-              }}
-            >
-              {`${lenght !== 100 && lenght !== 0 ? lenght + `%` : ``}`}
-              {/* {lenght}% */}
-            </span>
+            {/* {`${lenght !== 100 && lenght !== 0 ? lenght + `%` : ``}`} */}
+            {/* {lenght}% */}
+            01 апреля 2019 г.
           </div>
         </div>
         <div className="progress-bar__container">
@@ -40,18 +36,27 @@ class ProgressBar extends Component {
             <Filler percentage={lenght} />
           </div>
         </div>
-        <div className="progress-bar__container-percentage">
-          <div className="progress-bar__container-percentage__container">
-            <span>0%</span>
-            {/* <span
-              className="progress-bar__container-percentage__slide"
-              style={{ left: `${lenght - 3}%` }}
-            >
-              {
-                  `${Math.floor(80) > lenght > Math.floor(10) ? lenght+`%` : ``}`
-              }
-            </span> */}
-            <span>100%</span>
+        <div className="progress-bar__container-name">
+          <div className="progress-bar__container-name__item">
+            <span className="progress-bar__container-name__item__text">
+              Формирование списка ответственных лиц за организацию и проведение
+              регионального этапа Конкурса
+            </span>
+          </div>
+          <div className="progress-bar__container-name__item">
+            <span className="progress-bar__container-name__item__text">
+              Прием работ на федеральный этап Конкурса
+            </span>
+          </div>
+          <div className="progress-bar__container-name__item">
+            <span className="progress-bar__container-name__item__text">
+              Подведение итогов Конкурса
+            </span>
+          </div>
+          <div className="progress-bar__container-name__item">
+            <span className="progress-bar__container-name__item__text">
+              Награждение победителей
+            </span>
           </div>
         </div>
       </div>

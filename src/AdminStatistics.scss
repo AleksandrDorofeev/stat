@@ -16,34 +16,92 @@
     text-align: left;
     padding-left: 20px;
   }
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  &__charts-container {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-around;
+    width: 100%;
+    margin-top: 65px;
+    padding-left: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  &__charts-item {
+    // text-align: left;
+    position: relative;
+    &__title-1,
+    &__title-2,
+    &__title-3 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 50px;
+      font-size: 24px;
+      letter-spacing: 1px;
+      color: #39404c;
+      font-family: "Roboto Condensed";
+      font-weight: 700;
+    }
+    &__title-1 {
+      &:before {
+        position: absolute;
+        content: "";
+        width: 75px;
+        height: 70px;
+        left: -35px;
+        top: -21.5px;
+        background-color: rgb(168, 219, 245);
+        z-index: -1;
+      }
+    }
+    &__title-2 {
+      &:before {
+        position: absolute;
+        content: "";
+        width: 75px;
+        height: 70px;
+        left: -35px;
+        top: -21.5px;
+        background-color:#8ad3dd;
+        z-index: -1;
+      }
+    }
+    &__title-3 {
+      &:before {
+        position: absolute;
+        content: "";
+        width: 75px;
+        height: 70px;
+        left: -35px;
+        top: -21.5px;
+        background-color: #d0d4e5;
+        z-index: -1;
+      }
+    }
+    &__data {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #39404c;
+      font-family: "Roboto Condensed";
+      font-weight: 600;
+    }
+    &__data-right {
+      margin-top: 16px;
+    }
+    &__data-container {
+      display: flex;
+      align-items: center;
+      padding-left: 104px;
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 36px;
+      color: #39404c;
+      font-family: "Roboto Condensed";
+      font-weight: 600;
+      &__color {
+        width: 25px;
+        height: 20px;
+        margin-right: 14px;
+      }
+    }
   }
 }

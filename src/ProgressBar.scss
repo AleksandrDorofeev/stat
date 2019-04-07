@@ -41,54 +41,102 @@
   border: 1px solid #bababa;
   border-left: 0;
   border-right: 0;
+  background-color: #577ac8;
   &__cutoff-start {
     position: absolute;
-    height: 30px;
+    height: 200px;
     width: 1px;
-    left: 182.5px;
-    top: -6px;
-    background: #bababa;
+    left: 25%;
+    top: -30px;
+    background: #86a4e6;
   }
   &__cutoff-left-center {
     position: absolute;
-    height: 30px;
+    height: 200px;
     width: 1px;
-    left: 91.25px;
-    top: -6px;
-    background: #bababa;
+    right: 25%;
+    top: -30px;
+    background: #86a4e6;
   }
   &__cutoff-center {
     position: absolute;
-    height: 30px;
+    height: 200px;
     width: 1px;
     left: 0;
-    top: -6px;
-    background: #bababa;
+    top: -30px;
+    background: #86a4e6;
   }
   &__cutoff-right-center {
     position: absolute;
-    height: 30px;
+    height: 200px;
     width: 1px;
-    right: 91.25px;
-    top: -6px;
-    background: #bababa;
+    right: 50%;
+    top: -30px;
+    background: #86a4e6;
   }
   &__cutoff-end {
     position: absolute;
-    height: 30px;
+    height: 200px;
     width: 1px;
     right: 0;
-    top: -6px;
-    background: #bababa;
+    top: -30px;
+    background: #86a4e6;
+  }
+  &__container-date__container {
+    text-align: left;
+    margin-bottom: 41px;
+  }
+  &__container-date__item {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+    background-color: #394c94;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: 13px;
+      bottom: -5px;
+      background-color: #394c94;
+      transform: rotate(45deg);
+    }
+  }
+  &__container-name {
+    display: flex;
+    justify-content: space-around;
+    // text-align: left;
+    margin-bottom: 41px;
+    margin-top: 30px;
+    padding-left: 60px;
+    padding-right: 44px;
+    &__item {
+      width: 214px;
+      // margin-left: 10px;
+      text-align: center;
+      &__text {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: #39404c;
+        font-family: "Roboto Condensed";
+        font-weight: 500;
+      }
+    }
   }
 }
 
 .filler {
-  background: linear-gradient(
-    90deg,
-    rgba(110, 167, 216, 1) 30%,
-    rgba(40, 111, 163, 1) 70%
-  );
+  background: #394c94;
   height: 100%;
   //   border-radius: inherit;
   transition: width 0.2s ease-in;
